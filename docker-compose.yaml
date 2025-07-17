@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ha-recorder-db-editor:
+    build: 
+      context: .
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "2233:2233"
+    volumes:
+      - ./config.yaml:/config.yaml
+      - ${PWD}:/config
+      - /dev:/dev

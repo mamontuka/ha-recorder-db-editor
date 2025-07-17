@@ -1,0 +1,23 @@
+name: "Homeassistant Recorder Database Editor"
+description: "Tool for edit and fix entities/sensors values in Homeassistant Recorder Database."
+version: "1.0"
+slug: "ha_recorder_db_editor"
+url: "https://github.com/mamontuka/ha-recorder-db-editor"
+init: false
+ports:
+  2233/tcp: 2233
+map:
+  - addon_config:rw
+  - config:rw
+  - /config:/config:rw
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+options:
+  enable_debug_shell: true
+schema:
+  enable_debug_shell: bool
