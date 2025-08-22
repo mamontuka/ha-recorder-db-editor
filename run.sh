@@ -5,7 +5,7 @@ echo "Homeassistant Recorder Database Editor"
 
 mkdir -p /etc/dropbear
 
-for keytype in rsa dss ecdsa ed25519; do
+for keytype in rsa ecdsa ed25519; do
   keyfile="/etc/dropbear/dropbear_${keytype}_host_key"
   if [ ! -f "$keyfile" ]; then
     echo "[INFO] Generating $keytype key..."
