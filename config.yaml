@@ -1,6 +1,6 @@
 name: "Homeassistant Recorder Database Editor"
 description: "Tool for edit and fix entities/sensors values in Homeassistant Recorder Database."
-version: "1.0"
+version: "1.1"
 slug: "ha_recorder_db_editor"
 url: "https://github.com/mamontuka/ha-recorder-db-editor"
 init: false
